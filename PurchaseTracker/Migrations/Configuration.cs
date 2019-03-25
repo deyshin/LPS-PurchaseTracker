@@ -32,7 +32,7 @@ namespace PurchaseTracker.Migrations
                         Category = autoCategory,
                         CategoryId = autoCategory.Id,
                         Amount = 12.31,
-                        Date = DateTime.Today.AddDays(-1),
+                        Date = DateTime.Today.AddDays(-14),
                         Payee = "City of New York"
                     },
                     new Purchase()
@@ -42,6 +42,14 @@ namespace PurchaseTracker.Migrations
                         Amount = 422.11,
                         Date = DateTime.Today,
                         Payee = "City of Los Angeles"
+                    },
+                    new Purchase()
+                    {
+                        Category = autoCategory,
+                        CategoryId = autoCategory.Id,
+                        Amount = 98.01,
+                        Date = DateTime.Today.AddDays(-20),
+                        Payee = "City of Los London"
                     }
                 );
         }
